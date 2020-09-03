@@ -95,3 +95,9 @@ navBar.prepend(firstNav)
 navBar.appendChild(lastNav)
 
 navLinks.forEach(x => (x.style.color = "green"))
+
+let h1Text = document.querySelector("h1")
+h1Text.setAttribute("style", "white-space: pre;");
+h1Text.textContent = "DOM\r\n";
+h1Text.textContent += "is\r\n";
+h1Text.textContent += "Awesome"
