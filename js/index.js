@@ -94,10 +94,16 @@ lastNav.appendChild(textLastNav)
 navBar.prepend(firstNav)
 navBar.appendChild(lastNav)
 
-navLinks.forEach(x => (x.style.color = "green"))
+let colorChange = document.querySelectorAll("nav a")
+colorChange.forEach(Element => {Element.style.color = "green"})
 
 let h1Text = document.querySelector("h1")
 h1Text.setAttribute("style", "white-space: pre;");
 h1Text.textContent = "DOM\r\n";
 h1Text.textContent += "is\r\n";
 h1Text.textContent += "Awesome"
+
+let pContact1 = document.querySelector(".contact p")
+pContact1.setAttribute("style", "white-space: pre;");
+pContact1.textContent = "123 Way 456 Street\r\n"
+pContact1.textContent += "Somewhere, USA"
