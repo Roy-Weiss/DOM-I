@@ -50,11 +50,20 @@ ctaButton.textContent = siteContent["cta"]["button"]
 let ctaTitle = document.querySelector(".cta-text h1")
 ctaTitle.textContent = siteContent["cta"]["h1"]
 
+let middleImage = document.getElementById("middle-img")
+middleImage.setAttribute("src", siteContent["main-content"]["middle-img-src"])
 
+let contentText = document.querySelectorAll(".main-content .text-content p")
+contentText[0].textContent = siteContent["main-content"]["features-content"]
+contentText[1].textContent = siteContent["main-content"]["about-content"]
+contentText[2].textContent = siteContent["main-content"]["services-content"]
+contentText[3].textContent = siteContent["main-content"]["product-content"]
+contentText[4].textContent = siteContent["main-content"]["vison-content"]
 
-
-
-
-
-
+let titlesH4 = document.querySelectorAll(".main-content .text-content h4")
+titlesH4[0].textContent = siteContent["main-content"]["features-h4"]
+titlesH4[1].textContent = siteContent["main-content"]["about-h4"]
+titlesH4[2].textContent = siteContent["main-content"]["services-h4"]
+titlesH4[3].textContent = siteContent["main-content"]["product-h4"]
+titlesH4[4].textContent = siteContent["main-content"]["vison-h4"]
 
