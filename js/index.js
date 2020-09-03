@@ -77,3 +77,21 @@ contactData[2].textContent = siteContent["contact"]["email"]
 
 let footer = document.querySelector("footer p")
 footer.textContent = siteContent["footer"]["copyright"]
+
+let navLinks = document.querySelectorAll("nav a")
+navLinks.forEach(
+  (x, i) => (x.textContent = siteContent["nav"][`nav-item-${i+1}`])
+)
+
+let firstNav = document.createElement("a")
+let textFirstNav = document.createTextNode("Home")
+let lastNav = document.createElement("a")
+let textLastNav = document.createTextNode("mission")
+let navBar = document.querySelector("nav")
+
+firstNav.appendChild(textFirstNav)
+lastNav.appendChild(textLastNav)
+navBar.prepend(firstNav)
+navBar.appendChild(lastNav)
+
+navLinks.forEach(x => (x.style.color = "green"))
